@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =========================
+   🌍 Reset y base
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+/* =========================
+   🎨 Fondo global
+========================= */
+
+body {
+  @apply bg-gray-300;
+}
+
+/* =========================
+   🔺 Fondo diagonal
+========================= */
+
+.clip-diagonal {
+  clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+/* =========================
+   🧊 Glass effect reusable
+========================= */
+
+.glass {
+  @apply bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl shadow-xl;
+}
+
+/* =========================
+   ✨ Inputs estilizados
+========================= */
+
+.input {
+  @apply w-full mt-1 px-3 py-2 rounded-md bg-white/80 text-black outline-none focus:ring-2 focus:ring-red-400;
+}
+
+/* =========================
+   🔴 Botón principal
+========================= */
+
+.btn-primary {
+  @apply w-full bg-red-600 hover:bg-red-700 transition py-2 rounded-md font-semibold text-white;
+}
+
+/* =========================
+   🧠 Texto helper
+========================= */
+
+.text-link {
+  @apply underline cursor-pointer hover:text-red-200 transition;
+}
