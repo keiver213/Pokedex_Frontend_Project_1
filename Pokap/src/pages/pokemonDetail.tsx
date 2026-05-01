@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from "react";
 import { useParams } from "react-router-dom";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/navBar";
 import FavoriteStar from "../components/favoriteStar";
 import { isFavorite, toggleFavorite } from "../utils/favorites";
 import toast from "react-hot-toast";
